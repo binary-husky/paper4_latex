@@ -1,0 +1,11 @@
+There is also nicefrac package which provides \nicefrac{<Nr>}{<Dr>}:
+
+\documentclass{article}
+\usepackage{nicefrac}
+
+\begin{document}
+\( x_F \equiv \nicefrac{p_z}{p^{\mathrm{\text{max}}}_z} = \nicefrac{p_z}{(\nicefrac{\sqrt{s}}{2})} = \nicefrac{2p_z}{\sqrt s} \)
+
+% \vspace{.5cm}        %% Andrew's method for comparison purpose.
+\( x_F \equiv p_z^{}/p^{\mathrm{\text{max}}}_z = p_z/(\sqrt{s}/2) = 2p_z/\sqrt s \)
+\end{document}

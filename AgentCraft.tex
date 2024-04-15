@@ -1,0 +1,111 @@
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage{amsmath,amsfonts}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts, amsmath}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{graphicx}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+% \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{subcaption}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{newfloat}
+\usepackage{listings}
+\usepackage{makecell}
+\usepackage{enumitem,kantlipsum}
+\usepackage{empheq}
+\usepackage{wrapfig}
+\usepackage[numbers]{natbib}
+\usepackage{scalerel}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+% \titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 0pt minus 2pt}{0pt plus 2pt minus 2pt}
+% \titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
+% updated with editorial comments 8/9/2021
+
+\begin{document}
+
+\title{
+  % AgentMatrix: Building Distributed and Scalable LM Systems with Nested Agent
+  % AgentMatrix: Building Nested and Distributed Mulit-Agent LLM Systems with Scalability and Flexibility
+  % AgentMatrix: A Nested and Distributed Mulit-Agent LLM Systems with Scalability and Flexibility
+  % AgentMatrix: A New-Generation Nested and Distributed Mulit-Agent LLM Systems
+  % AgentMatrix: Advancing Scalable and Distributed Multi-Agent LLM Infrastructures with Nested Architecture
+  AgentMatrix: Advancing towards Nested and Distributed Multi-Agent LLM Infrastructures
+}
+\author {
+    Qingxu Fu
+    \thanks{
+    The authors are with the Institute of Automation, Chinese Academy of Sciences, Beijing 100190, China,
+    the School of Artificial Intelligence, University of Chinese Academy of Sciences, Beijing 100049, China.
+    (e-mail: fuqingxu2019@ia.ac.cn).
+    }% <-this % stops a space
+}
+
+
+\maketitle
+
+\begin{abstract}
+  \input{tex/00-abs.tex}
+\end{abstract}
+
+\begin{IEEEkeywords}
+Multi-agent systems, nested agents, large language models, supervised fine-tuning, reinforcement learning.
+\end{IEEEkeywords}
+
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=0.9\linewidth]{drawio/299397865-1e63278f-0453-4b84-83c7-deb7c92ac466.png}
+  \caption{Agents are allowed to establish nested cooperation structure in AgentMatrix.}
+  \label{fig:agent_nestded}
+  \end{figure*}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=0.9\linewidth]{drawio/distributed-phase2.drawio.pdf}
+  \caption{The communication and distribution of agents in AgentMatrix framework.}
+  \label{fig:agent_com}
+  \end{figure*}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=0.9\linewidth]{drawio/agent_trigger.drawio.pdf}
+  \caption{Agent begin its task when receiving triggers. In most cases, agents should begin working when it receives message from its upsteam agents. However, an agent can connect to multiple upsteam agents simutanously, and in some applications an agent also has to deal with real-time signal. Thereby, a multi-group triggering mechanism is designed to resolve these challenges.}
+  \label{fig:agent_trigger}
+  \end{figure*}
+
+
+
+\bibliographystyle{IEEEtranN}
+
+{\footnotesize
+\bibliography{cite.bib}}
+
+
+
+
+\vfill
+
+\end{document}
+
+

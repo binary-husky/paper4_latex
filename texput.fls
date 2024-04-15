@@ -1,0 +1,5 @@
+PWD g:/SEAFILE_LOCAL/50503047/ÎÒµÄ×ÊÁÏ¿â/research2/fuzzy_adversial-phase6
+INPUT c:/texlive/2020/texmf.cnf
+INPUT c:/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt
+OUTPUT g:/SEAFILE_LOCAL/50503047/æˆ‘çš„èµ„æ–™åº“/research2/fuzzy_adversial-phase6/texput.log

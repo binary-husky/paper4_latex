@@ -1,0 +1,37 @@
+pdfcrop ai/fuzzy_proceed.pdf
+pdfcrop ai/fig2.pdf
+pdfcrop plot\20vs20_multi_method.pdf
+
+
+
+\begin{figure}[!t]
+\begin{subfigure}{.33\linewidth}
+\centering
+\includegraphics[width=\linewidth]{plot/100vs100-acc.pdf} 
+\caption{
+Transferability test: towards large-scale tasks.
+}
+\label{fig:100vs100}
+\end{subfigure}
+
+\begin{subfigure}{.33\linewidth}
+\centering
+\includegraphics[width=\linewidth]{plot/20vs20vs20-acc.pdf} 
+\caption{
+Transferability test: triple tasks 20vs20vs20.
+}
+\label{fig:20vs20vs20}
+\end{subfigure}
+
+\begin{subfigure}{.33\linewidth}
+\centering
+\includegraphics[width=\linewidth]{plot/100vs100vs100-acc.pdf} 
+\caption{
+Transferability test: triple tasks 100vs100vs100.
+}
+\label{fig:100vs100vs100}
+\end{subfigure}
+
+\caption{Transferability experimental results.}
+\label{fig:Transferability}
+\end{figure}
